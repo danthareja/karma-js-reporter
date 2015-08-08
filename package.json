@@ -1,0 +1,12 @@
+{
+  "name": "karma-js-reporter",
+  "version": "1.0.0",
+  "description": "send JSON results of karma test to a callback function",
+  "repository": "https://github.com/danthareja/karma-js-reporter.git",
+  "main": "index.js",
+  "author": "Dan Thareja <danthareja@gmail.com>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "None"
+}
