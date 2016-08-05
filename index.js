@@ -37,8 +37,8 @@ function jsReporter(baseReporterDecorator, formatError, config) {
     failures.push(result);
   };
 
-  this.specSkipped = function(browser, results) {
-    pending.push(test);
+  this.specSkipped = function(browser, result) {
+    pending.push(result);
   };
 
   this.onRunComplete = function(browsers, results) {
