@@ -1,6 +1,6 @@
 {
   "name": "karma-js-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "send JSON results of karma test to a callback function",
   "repository": "https://github.com/danthareja/karma-js-reporter.git",
   "main": "index.js",
