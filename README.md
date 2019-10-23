@@ -12,6 +12,13 @@ jsReporter: function(testResults){
   // do something with testResults here
 }
 
+
+// if following set in config check for a11y tests is performed based on: https://open-wc.org/testing/testing-chai-a11y-axe.html
+client: {
+  mocha: {
+    expose: ['body'],
+  },
+}
 // ... more configuration
 ```
 
@@ -31,17 +38,22 @@ jsReporter: function(testResults){
     {
       "title": "should be a function",
       "description": "each should be a function",
-      "duration": 0
+      "duration": 0,
+      "a11y": []
     },
     {
       "title": "should not return anything",
       "description": "each should not return anything",
-      "duration": 0
+      "duration": 0,
+      "a11y": null
     },
     {
       "title": "provide access to each value",
       "description": "each should iterate over arrays and provide access to each value",
-      "duration": 1
+      "duration": 1,
+      "a11y": [
+        "aria-valid-attr-value"
+      ]
     },
     {
       "title": "provide access to each index",
